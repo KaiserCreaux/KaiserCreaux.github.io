@@ -1,0 +1,2178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1187.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000ee}
+    span.s1 {text-decoration: underline ; color: #0000ee}
+    span.s2 {color: #000000}
+    span.s3 {text-decoration: underline}
+    td.td1 {margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td2 {width: 759.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+  </style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;!DOCTYPE html&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;html&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;head&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;title&gt;Legacy Character Sheet Constructor&lt;/title&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;link rel="stylesheet" href="<a href="http://todd.sharonand.co/style.css"><span class="s1">style.css</span></a>"&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;script src="<a href="http://todd.sharonand.co/jquery-2.1.0.min.js"><span class="s1">jquery-2.1.0.min.js</span></a>"&gt;&lt;/script&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;script type='text/javascript' src='<a href="http://todd.sharonand.co/script.js"><span class="s1">script.js</span></a>'&gt;&lt;/script&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/head&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;body&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='page' class='page'&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id="main"&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;h1&gt;Legacy LARP Character Sheet Constructor&lt;/h1&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;h1&gt;www.legacylarp.com&lt;/h1&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;ul class="raceTab"&gt;&lt;!--The main tabs to switch between content types--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="humanTab"&gt;&lt;div&gt;Human&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="elfTab"&gt;&lt;div&gt;Elf&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="dwarfTab"&gt;&lt;div&gt;Dwarf&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="dahnTab"&gt;&lt;div&gt;Dahn&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="wyrdTab"&gt;&lt;div&gt;Wyrd&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/ul&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div class="raceContentTab" id="startTab"&gt;&lt;div class="seg raceSelected" id="startTab" style="display:block;"&gt;&lt;!--Given the class 'selected' and style 'block' to begin with so visitors have some content greet them--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div class="content" style="display:block;"&gt;Select Your Race.&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div class="raceContentTab" id="humanTab"&gt;&lt;div class="seg" id="humanTab" style="display:none;"&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div class="content" style="display:block;"&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;h5&gt;The Humans&lt;/h5&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Humans are known to others primarily by their homelands.&lt;br&gt; The three great human cultures are the &lt;a href="<a href="http://legacylarp.com/midlanders.php"><span class="s1">http://legacylarp.com/midlanders.php</span></a>" target="_blank"&gt;Midlanders&lt;/a&gt;, &lt;br&gt;the &lt;a href="<a href="http://legacylarp.com/wastelanders.php"><span class="s1">http://legacylarp.com/wastelanders.php</span></a>" target="_blank"&gt;Wastelanders&lt;/a&gt; and the &lt;a href="<a href="http://legacylarp.com/northlanders.php"><span class="s1">http://legacylarp.com/northlanders.php</span></a>" target="_blank"&gt;Northlanders&lt;/a&gt;.&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;ul class="humanTypeTab"&gt;&lt;!--The tabs to switch between human subtypes--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="midlanderTab"&gt;&lt;div&gt;Midlander&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="northlanderTab"&gt;&lt;div&gt;Northlander&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="wastelanderTab"&gt;&lt;div&gt;Wastelander&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/ul&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div class="raceContentTab" id="elfTab"&gt;&lt;div class="seg" id="elfTab" style="display:none;"&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div class="content" style="display:block;"&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;h5&gt;The Elves&lt;/h5&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;The ancient elves have lived across the world of Sapience.&lt;br&gt;The &lt;a href="<a href="http://legacylarp.com/greyelves.php%20target="><span class="s1">http://legacylarp.com/greyelves.php target=</span></a>"_blank""&gt;Grey Elves&lt;/a&gt; are noble, wise and withdrawn.&lt;br&gt;The &lt;a href="<a href="http://legacylarp.com/darkelves.php%20target="><span class="s1">http://legacylarp.com/darkelves.php target=</span></a>"_blank""&gt;Dark Elves&lt;/a&gt; are hierarchical, cunning and always in pursuit of power.&lt;br&gt;The &lt;a href="<a href="http://legacylarp.com/wildelves.php%20target="><span class="s1">http://legacylarp.com/wildelves.php target=</span></a>"_blank""&gt;Wild Elves&lt;/a&gt;, stern and resolute, have a love and respect for nature.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p1"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;ul class="elfTypeTab"&gt;&lt;!--The main tabs to switch between elf subtypes--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="darkElfTab"&gt;&lt;div&gt;Dark Elf&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="greyElfTab"&gt;&lt;div&gt;Grey Elf&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="wildElfTab"&gt;&lt;div&gt;Wild Elf&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/ul&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div class="raceContentTab" id="dwarfTab"&gt;&lt;div class="seg" id="dwarfTab" style="display:none;"&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div class="content" style="display:block;"&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;h5&gt;The Dwarves&lt;/h5&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;The pious and formal &lt;a href="<a href="http://legacylarp.com/deepbeards.php%20target="><span class="s1">http://legacylarp.com/deepbeards.php target=</span></a>"_blank""&gt;Deep Beards&lt;/a&gt; are a contrast&lt;br&gt;to the impetuous and clan-focused &lt;a href="<a href="http://legacylarp.com/highbeards.php%20target="><span class="s1">http://legacylarp.com/highbeards.php target=</span></a>"_blank""&gt;High Beards&lt;/a&gt;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;ul class="dwarfTypeTab"&gt;&lt;!--The main tabs to switch between dwarf subtypes--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="deepBeardTab"&gt;&lt;div&gt;Deep Beard&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="highBeardTab"&gt;&lt;div&gt;High Beard&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/ul&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div class="raceContentTab" id="dahnTab"&gt;&lt;div class="seg" id="dahnTab" style="display:none;"&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div class="content" style="display:block;"&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;h5&gt;The Dahn&lt;/h5&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Those Orcs and Goblins who eschew the savage ways&lt;br&gt;of the majority of their type are known as the &lt;a href="<a href="http://legacylarp.com/dahn.php%20target="><span class="s1">http://legacylarp.com/dahn.php target=</span></a>"_blank""&gt;Dahn&lt;/a&gt;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;ul class="dahnTypeTab"&gt;&lt;!--The main tabs to switch between dahn subtypes--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="goblinTab"&gt;&lt;div&gt;Goblin&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="orcTab"&gt;&lt;div&gt;Orc&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/ul&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div class="raceContentTab" id="wyrdTab"&gt;&lt;div class="seg" id="wyrdTab" style="display:none;"&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div class="content" style="display:block;"&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;h5&gt;The Wyrd&lt;/h5&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Of all the mortal races of Sapience, there are none more shrouded in mystery than the &lt;a href="<a href="http://legacylarp.com/wyrd.php%20target="><span class="s1">http://legacylarp.com/wyrd.php target=</span></a>"_blank""&gt;Wyrd&lt;/a&gt;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;ul class="wyrdTypeTab"&gt;&lt;!--The tabs to switch between wyrd subtypes--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="airWyrdTab"&gt;&lt;div&gt;Air Wyrd&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="earthWyrdTab"&gt;&lt;div&gt;Earth Wyrd&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="fireWyrdTab"&gt;&lt;div&gt;Fire Wyrd&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;li id="waterWyrdTab"&gt;&lt;div&gt;Water Wyrd&lt;/div&gt;&lt;/li&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/ul&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='raceDisplayContainer'&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='northlanderTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--Northlander display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/C0FYqod.jpg"><span class="s3">http://i.imgur.com/C0FYqod.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Northlanders&lt;br&gt;HP:10/MP:4&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in Huntsman or Mystic&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Choice between:&lt;br&gt;Path of the Warrior&lt;br&gt;Path of the Fate Wielder&lt;br&gt;Path of the Jarl</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectNorthlander"&gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButtonRace returnButton"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='midlanderTab' class='raceDisplay raceStyle' style="display:block"&gt;&lt;!--Midlander display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/GxeikaX.jpg"><span class="s3">http://i.imgur.com/GxeikaX.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Midlanders&lt;br&gt;HP:6/MP:6&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">2 Professions to Start&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Favored Group</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectMidlander"&gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButtonRace returnButton"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='wastelanderTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--Wastelander display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/KKH0r9u.jpg"><span class="s3">http://i.imgur.com/KKH0r9u.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Wastelanders&lt;br&gt;HP:4/MP:8&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in Merchant or Rogue&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Choice between:&lt;br&gt;Slow&lt;br&gt;Mend Limb&lt;br&gt;Heart Scarab</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectWastelander" &gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButton" onclick="returnButtonRace();"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='greyElfTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--Grey Elves--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/6aGfjRE.jpg"><span class="s3">http://i.imgur.com/6aGfjRE.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Grey Elves&lt;br&gt;HP:6/MP:10&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in Mystic or Linguist&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Choice between:&lt;br&gt;Erudition&lt;br&gt;Comprehend&lt;br&gt;Refuge</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectGreyElf" &gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButton" onclick="returnButtonRace();"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='wildElfTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--Wild Elves display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/GE4STlj.jpg"><span class="s3">http://i.imgur.com/GE4STlj.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Wild Elves&lt;br&gt;HP:6/MP:8&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in Huntsman or Medicine&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Choice between:&lt;br&gt;Writ of the Maple&lt;br&gt;Writ of the Cedar&lt;br&gt;Writ of the Oak</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectWildElf" &gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButton" onclick="returnButtonRace();"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='darkElfTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--Dark Elf display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/9JX1yeO.jpg"><span class="s3">http://i.imgur.com/9JX1yeO.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Dark Elves&lt;br&gt;HP:4/MP:12&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in Diplomat or Poison&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Choice between:&lt;br&gt;sting&lt;br&gt;Shadow Mask&lt;br&gt;Combat Sacrifice</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectDarkElf" &gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButton" onclick="returnButtonRace();"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='deepBeardTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--Deep Beard display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/5ahCb4Q.jpg"><span class="s3">http://i.imgur.com/5ahCb4Q.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Deep Beards&lt;br&gt;HP:6/MP:8&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in History or Jeweller&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Heirloom Item</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectDeepBeard" &gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButton" onclick="returnButtonRace();"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='highBeardTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--high Beard display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/iSXkOJG.png"><span class="s3">http://i.imgur.com/iSXkOJG.png</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;High Beards&lt;br&gt;HP:6/MP:6&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in Bard or Brewer&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Choice between:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Geas of Animal&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Geas of Nourishment&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Geas of Guest&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectHighBeard" &gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButton" onclick="returnButtonRace();"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='orcTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--Orc display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/dF4gEPT.jpg"><span class="s3">http://i.imgur.com/dF4gEPT.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Orcs&lt;br&gt;HP:8/MP:8&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in Jeweller or Battle Smith&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Choice between:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Gift of Drogba&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Gift of Gerkal&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Bane of Duat&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectOrc" &gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButton" onclick="returnButtonRace();"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='goblinTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--Goblin display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/gdSSFVG.jpg"><span class="s3">http://i.imgur.com/gdSSFVG.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Goblins&lt;br&gt;HP:4/MP:12&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in Jeweller or Battle Smith&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Choice between:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Gift of Drogba&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Gift of Gerkal&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Bane of Duat&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectGoblin" &gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButton" onclick="returnButtonRace();"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='airWyrdTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--Air Wyrd display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/GrLJIes.jpg"><span class="s3">http://i.imgur.com/GrLJIes.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Air Wyrds&lt;br&gt;HP:4/MP:10&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in History or Linguistics&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Dart of Lightning</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectAirWyrd" &gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButton" onclick="returnButtonRace();"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='earthWyrdTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--Earth Wyrd display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/9MLJ4Xt.jpg"><span class="s3">http://i.imgur.com/9MLJ4Xt.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Earth Wyrds&lt;br&gt;HP:4/MP:10&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in Medicine or Poison&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Dart of Crystal</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectEarthWyrd" &gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButton" onclick="returnButtonRace();"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='fireWyrdTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--Fire Wyrd display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/SNj7Zvd.jpg"><span class="s3">http://i.imgur.com/SNj7Zvd.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Fire Wyrds&lt;br&gt;HP:4/MP:10&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in Battle Smith or Artificer&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Dart of Fire</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectFireWyrd" &gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButton" onclick="returnButtonRace();"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='waterWyrdTab' class='raceDisplay raceStyle' style="display:none"&gt;&lt;!--Water Wyrd display--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p3"><span class="s2">&lt;img src="<a href="http://i.imgur.com/3EgM2Wl.jpg"><span class="s3">http://i.imgur.com/3EgM2Wl.jpg</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;p&gt;Water Wyrds&lt;br&gt;HP:4/MP:10&lt;br&gt;Racial Boons:&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Novice skill in Merchant or Bard&lt;br&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">Dart of Ice</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="buttonSelect" id="selectWaterWyrd" &gt;Select&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;button type="button" class="returnButton" onclick="returnButtonRace();"&gt;Return&lt;/button&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/p&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='sideBar'&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='options'&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p1"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='characterSheet'&gt;&lt;!--Heart of the project. It will show the results from the selections the user makes.--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;table&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;tr&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;&lt;button class="buttonSelect" id="setPlayerName"&gt;Your Name:&lt;/button&gt;&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;&lt;p id="playerName"&gt;&lt;/p&gt;&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/tr&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;tr&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;&lt;button class="buttonSelect" id="setCharacterName"&gt;Character Name:&lt;/button&gt;&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;&lt;p id="characterName"&gt;&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/tr&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;tr&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;Race:&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;&lt;p id="raceTotal"&gt;&lt;/p&gt;&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/tr&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;Hit Points:&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;&lt;p id="hitPointsTotal"&gt;0&lt;/p&gt;&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/tr&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;tr&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;Magic Points:&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;&lt;p id="magicPointsTotal"&gt;0&lt;/p&gt;&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/tr&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;Professions:&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;&lt;p id="professionsTotal"&gt;&lt;/p&gt;&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/tr&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/tr&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;Abilities:&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;td&gt;&lt;p id="abilitiesTotal"&gt;&lt;/p&gt;&lt;/td&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/tr&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/table&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;!--&lt;div id='sheetName'&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;form&gt;Player name: &lt;input type="text" name="playerName"&gt;&lt;/form&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='sheetCharacterName'&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;form&gt;Character name: &lt;input type="text" name="characterName"&gt;&lt;/form&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='sheetRace'&gt;&lt;p&gt;Race:&lt;/p&gt;&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='sheetSkillSet'&gt;&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;div id='sheetProfession'&gt;&lt;/div&gt;&lt;p&gt;Hi&lt;/p&gt;--&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/div&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/body&gt;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2">&lt;/html&gt;</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
