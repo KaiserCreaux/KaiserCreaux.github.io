@@ -1,0 +1,26 @@
+body {
+	background-color:#aaffaa
+}
+
+p {
+	font: "Book Antiqua";
+	font-size: 1.2em;
+}
+
+div {
+	
+
+}
+
+#dangerDiv {
+	font: impact;
+	color: orange;
+	background-color: black;
+	border-radius: 2px;
+	border-color: orange;
+	width: 60%;
+}
+button {
+	color: black;
+	background-color: orange;
+}
