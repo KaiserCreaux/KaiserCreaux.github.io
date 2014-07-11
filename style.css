@@ -1,11 +1,12 @@
 body {
 	background-color:#aaffaa;
-	font: "Vollkorn";
+	font-family: "Vollkorn";
 	font-size: 2em;
 }
 
 h1 {
-	font: "Ubuntu";
+	font-family: "Ubuntu";
+	text-shadow: 2px 2px 3px black;
 }
 
 p {
@@ -15,19 +16,27 @@ p {
 aside {
 	float:right;
 	max-width: 30%;
+	background-color: pink;
 }
-
+aside li {
+	list-style: none;
+}
+#sample {
+	background-color: white;
+}
 #dangerDiv {
 	font: impact;
 	color: orange;
 	background-color: black;
-	border-radius: 2px;
+	border-style: solid;
+	border-radius: 5px;
 	border-color: orange;
 	width: 60%;
 	height:20%;
 	margin-left: auto;
     margin-right: auto;
     display: block;
+    float: clear;
 }
 button {
 	position: absolute;
