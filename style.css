@@ -16,13 +16,12 @@ p {
 aside {
 	float:right;
 	max-width: 30%;
-	background-color: pink;
 }
 aside li {
 	list-style: none;
 }
 #sample {
-	background-color: white;
+	background-color: red;
 }
 #dangerDiv {
 	font: impact;
