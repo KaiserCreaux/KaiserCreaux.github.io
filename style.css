@@ -1,11 +1,19 @@
+@font-face {
+	font-family: 'League Gothic';
+	src: url('fonts/LeagueGothic-CondensedItalic.otf');
+	src: url('fonts/LeagueGothic-CondensedRegular.otf');
+	src: url('fonts/LeagueGothic-Italic.otf');
+	src: url('fonts/LeagueGothic-Regular.otf');
+}
+
 body {
 	background-color:#aaffaa;
-	font-family: "Vollkorn";
+	font-family: "League Gothic";
 	font-size: 2em;
 }
 
 h1 {
-	font-family: "Ubuntu";
+	font-family: "League Gothic";
 	text-shadow: 2px 2px 3px black;
 }
 
@@ -13,16 +21,34 @@ p {
 	display: inline;
 }
 
+figcaption {
+	font-size: 1em;
+}
 aside {
-	float:right;
 	max-width: 30%;
+	background-color: #aaffaa;
+	position:fixed;
+    top: 30px;
+    right: 5px;
+    border: 1px solid rgba(255, 0, 0, .5);
 }
 aside li {
 	list-style: none;
 }
-#sample {
-	background-color: red;
+
+#cupOfJoy {
+	padding: 1em;
+	border: .5em;
+	border-style: solid;
+	border-color: #aaffaa;
 }
+
+#sample {
+	background-color: #bb99aa;
+	max-width:70%;
+	margin: 2em;
+}
+
 #dangerDiv {
 	font: impact;
 	color: orange;
@@ -31,15 +57,20 @@ aside li {
 	border-radius: 5px;
 	border-color: orange;
 	width: 60%;
-	height:20%;
+	height: 5em;
 	margin-left: auto;
     margin-right: auto;
     display: block;
-    float: clear;
 }
+
 button {
 	position: absolute;
     right: 50%;
 	color: black;
 	background-color: orange;
 }
+#content{position:absolute; display:block;}
+#iDine{position:relative; max-width: 100px; min-height: 200px; float:left; display:block;}
+#iAdventure{position:relative; display: block;}
+#iHelp{position:relative; display: block;}
+.content{border:2px solid gray;}
