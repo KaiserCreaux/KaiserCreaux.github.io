@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Todd A. Crow</title>
-        <link rel="stylesheet" href="style.css">
-        <!--<link href='http://fonts.googleapis.com/css?family=Merriweather:400,900italic|Vollkorn:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
-        <link href='' rel='stylesheet' type='text/css'>
--->
-
+  <head>
+      <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'> 
+      <title>Todd A. Crow</title>
         <!--<script src="jquery-2.1.0.min.js"></script>
         <script type='text/javascript' src='script.js'></script>-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-<title>My Title</title>
-<!--<link rel="stylesheet" type="text/css" href="experiment.css">
- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="experiment.css">
+      Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css"><!--Bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!--Bootstrap-->
+    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script><!--Bootstrap-->
+      <link rel="stylesheet" href="style.css">
     </head>
 <body>
 	<nav class="navbar navbar-default" role="navigation">
@@ -32,7 +27,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img id="monogram" src="http://i.imgur.com/bkKieGA.png"></a>
+      <a class="navbar-brand" href="http://www.toddacrow.com"><img id="monogram" src="http://i.imgur.com/bkKieGA.png"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -61,27 +56,38 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-	<div id="background">
-<div id="sample">
-	<h1>Welcome to Todd's webpage.</h1>
-	<p>This is a pretty darn early version of my web page. I'm attending Startup Institute NYC's summer 2014 session. I'm using this to show off some of the toys I've been working on. As of right now, it's a bit ugly. <em>Bear with me.</em></p>
-	<figure>
-  <img id='cupOfJoy' src="http://i.imgur.com/mWea64O.jpg" alt="Cup of Brown Joy">
-  <figcaption>One of the tools I'm learning is CSS. I'm skilled-enough to present this for your <em>viewing pleasure.</em></figcaption>
-</figure>
-<div id="content">
-<article id="iDine" class="content">I enjoy dining.</article>
-<article id="iAdventure" class="content">I enjoy adventure.</article>
-<article id="iHelp" class="content">I enjoy helping others.</article>
+<div "panel-group" id="accordion">
+   <div class="panel panel-default">
+      <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#collapseBio"><h3>Bio</h3></a></div>
+        <div id="collapseBio" class="panel-collapse collapse in">
+          <div class="panel-body"><p st>My previous career was technical recruiting/account managing at a small company. It had an energetic, team-focused environment, but it was all about the commission. I am looking for the next iteration of my career to be completely different and much the same--"all-hands-on-deck" continues as my motto and helping one another as a given across the team are both incredibly important. The difference is that I want my team to build something fantastic, and I know I need to assume the weight of making this happen. The product is only outstanding if it is designed the right way--I am growing to be that designer. I do really enjoy dining, adventure, sports and travel, but I'm more interested in working on a great idea than finding the best idea in a particular field.</p></div>
+        </div>
+      <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#collapseCV"><h3>CV</h3></a></div>
+        <div id="collapseCV" class="panel-collapse collapse in">
+          <div class="panel-body"><p>Product and Design Track<br>
+          Startup Institute<br>
+          June 2014 – Present (2 months) New York, New York
+          Startup Institute is the #1 career accelerator, offering transformative educational experiences that combine hard skills with cultural acumen to increase the velocity and impact of future startup employees. Through a selective 8-week training program, participants gain the skills, network, and mentality to successfully launch into startup careers.</p></div>
+        </div>
+      <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#collapseProjects"><h3>Projects</h3></a></div>
+        <div id="collapseProjects" class="panel-collapse collapse in">
+          <div class="panel-body"><p>Here are some of the UX-related projects I've been working with both inside and outside Startup Institute.</div>
+        </div>
+      <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#collapseRecipes"><h3>Recipes</h3></a></div>
+        <div id="collapseRecipes" class="panel-collapse collapse in">          
+          <div class="panel-body"><p>I really enjoy cooking! Let me talk you through a few recipes. You might learn something about how I design along the way.</p></div>
+        </div>
+      <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTrips"><h3>Trips</h3></a></div>
+        <div id="collapseTrips" class="panel-collapse collapse in">           
+          <div class="selectableBlock" id="tripsBlock"><p>Adventure is awesome. Here are several trips I've been on recently.</p></div>
+        </div>
+      <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#collapseBlog"><h3>Blog</h3></a></div>
+        <div id="collapseBlog" class="panel-collapse collapse in">          
+          <div class="panel-body"><p>This is where I'll rant and rail about what I've done with this place.</p></div>
+        </div>
+  </div>
 </div>
-	<div id="dangerDiv">
-		<p>Hit this button to rock your world.</p>
-		<br>
-		<button type="button" id="rockAway">Rock Away</button>
-	</div>
-</div>
-</div>
+<footer><p>Thanks for visiting! Let me know where I could improve. Got a fun project? Let me know, I'd love to help! This version is a'la July 2014.</p></footer>
 
 </body>
 </html>

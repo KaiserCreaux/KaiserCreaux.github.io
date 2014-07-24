@@ -1,1 +1,0 @@
-!function(){$(function(){var t;return"production"!==RAILS_ENV&&mixpanel.disable(),t=$("meta[name=mixpanel-title]").attr("content"),(null!=t?t.length:void 0)>0?mixpanel.track("Visit "+t):void 0})}.call(this);

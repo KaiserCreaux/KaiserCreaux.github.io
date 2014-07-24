@@ -1,87 +1,32 @@
-@font-face {
-	font-family: 'League Gothic';
-	src: url('fonts/LeagueGothic-CondensedItalic.otf');
-	src: url('fonts/LeagueGothic-CondensedRegular.otf');
-	src: url('fonts/LeagueGothic-Italic.otf');
-	src: url('fonts/LeagueGothic-Regular.otf');
-}
 
 body {
 	background-color:#aaffaa;
-	font-family: "League Gothic";
+	font-family: "Ubuntu";
 	font-size: 2em;
 	vertical-align: center;
 }
 
-h1 {
-	font-family: "League Gothic";
-	text-shadow: 2px 2px 3px black;
+h3 {
+	font-family: 'Vollkorn', serif;
+	text-shadow: 1px 1px 2px black;
 }
 
 p {
 	display: inline;
 }
 
-figcaption {
+footer {
 	font-size: 1em;
-}
-aside {
-	max-width: 30%;
-	background-color: #aaffaa;
-	position:fixed;
-    top: 30px;
-    right: 5px;
-    border: 1px solid rgba(255, 0, 0, .5);
-}
-aside li {
-	list-style: none;
-}
-
-#cupOfJoy {
-	padding: 1em;
-	border: .5em;
-	border-style: solid;
-	border-color: #aaffaa;
-}
-
-#sample {
-	background-color: #bb99aa;
-	max-width:70%;
-	margin: 2em;
-}
-
-#dangerDiv {
-	font: impact;
-	color: orange;
-	background-color: black;
-	border-style: solid;
-	border-radius: 5px;
-	border-color: orange;
-	width: 60%;
-	height: 5em;
-	margin-left: auto;
-    margin-right: auto;
-    display: block;
-    vertical-align: center;
+	vertical-align: right;
 }
 
 #monogram {
 	height: 85%;
 }
 
-#cupOfJoy {
-	width: 40%;
-	height: 40%;
+#accordion {
+	border: 1px solid #ggg;
+	max-width: 70%;
+	margin-right: 20%;
+    margin-left: 20%;
 }
-
-button {
-	position: absolute;
-    right: 50%;
-	color: black;
-	background-color: orange;
-}
-#content{position:absolute; display:block;}
-#iDine{position:relative; max-width: 100px; min-height: 200px; float:left; display:block;}
-#iAdventure{position:relative; display: block;}
-#iHelp{position:relative; display: block;}
-.content{border:2px solid gray;}
