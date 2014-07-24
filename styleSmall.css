@@ -13,12 +13,12 @@ nav {
 }
 
 .panel-heading {
-	background-color: orange;
+	background-color: #FF8438;
 }
 
 h3 {
 	font-family: 'Vollkorn', serif;
-	color: orange;
+	color: #FF8438;
 	text-shadow: 1px 1px 2px black;
 }
 
@@ -27,9 +27,9 @@ p {
 }
 
 footer {
-	font-size: 1em;
+	font-size: .77em;
 	vertical-align: right;
-	color: orange;
+	color: #FF8438;
 	text-shadow: 1px 1px 2px black;
 }
 
@@ -39,7 +39,7 @@ footer {
 
 #accordion {
 	border: 3px solid #ggg;
-	max-width: 70%;
-	margin-right: 20%;
-    margin-left: 20%;
+	max-width: 90%;
+	margin-right: 10%;
+    margin-left: 10%;
 }
