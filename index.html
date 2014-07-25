@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css"><!--Bootstrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!--Bootstrap-->
     <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script><!--Bootstrap-->
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" media="screen and (max-width:500px)" href="styleSmall.css" />
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" media="screen and (max-width:7600px)" href="css/styleMedium.css"/>
+      <link rel="stylesheet" media="screen and (max-width:400px)" href="css/styleSmall.css"/>
     </head>
 <body>
 	<nav class="navbar navbar-default" role="navigation">
@@ -58,9 +59,10 @@
 </nav>
 <div "panel-group" id="accordion">
    <div class="panel panel-default">
-      <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#collapseBio"><h3>Bio</h3></a></div>
+      <div class="panel-heading" id="headingBio"><a data-toggle="collapse" data-parent="#accordion" href="#collapseBio"><h3>Bio</h3></a></div>
         <div id="collapseBio" class="panel-collapse collapse">
-          <div class="panel-body"><p st>My previous career was technical recruiting/account managing at a small company. It had an energetic, team-focused environment, but it was all about the commission. I am looking for the next iteration of my career to be completely different and much the same--"all-hands-on-deck" continues as my motto and helping one another as a given across the team are both incredibly important. The difference is that I want my team to build something fantastic, and I know I need to assume the weight of making this happen. The product is only outstanding if it is designed the right way--I am growing to be that designer. I do really enjoy dining, adventure, sports and travel, but I'm more interested in working on a great idea than finding the best idea in a particular field.</p></div>
+          <div class="panel-body"><p>My previous career was technical recruiting/account managing at a small company. It had an energetic, team-focused environment, but it was all about the commission. I am looking for the next iteration of my career to be completely different and much the same--"all-hands-on-deck" continues as my motto and helping one another as a given across the team are both incredibly important. 
+            <br>The difference is that I want my team to build something fantastic, and I know I need to assume the weight of making this happen. The product is only outstanding if it is designed the right way--I am growing to be that designer. <dr>I do really enjoy dining, adventure, sports and travel, but I'm more interested in working on the greatest idea I can than finding the best idea in a particular field.</p></div>
         </div>
       <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#collapseCV"><h3>CV</h3></a></div>
         <div id="collapseCV" class="panel-collapse collapse">
@@ -75,11 +77,21 @@
         </div>
       <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#collapseRecipes"><h3>Recipes</h3></a></div>
         <div id="collapseRecipes" class="panel-collapse collapse">          
-          <div class="panel-body"><p>I really enjoy cooking! Let me talk you through a few recipes. You might learn something about how I design along the way.</p></div>
+          <div class="panel-body"><p>I really enjoy cooking! Let me talk you through a few recipes. You might learn something about how I design along the way. A few of my favorites include:</p>
+          <ul>
+            <li><a>Tiger's Tears Salad</a></li>
+            <li><a>St. Louis Pork Steak</a></li>
+            <li><a>Rye Pale Ale</a></li>
+            <li><a>(Green beans and tomatoes)</a></li>
+          </ul>
+          </div>
         </div>
       <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTrips"><h3>Trips</h3></a></div>
         <div id="collapseTrips" class="panel-collapse collapse">           
-          <div class="selectableBlock" id="tripsBlock"><p>Adventure is awesome. Here are several trips I've been on recently.</p></div>
+          <div class="selectableBlock" id="tripsBlock"><p>Adventure is awesome. Here are several trips I've been on recently.</p>
+            <ul>
+              <li><a>Legacy LARP</a></li>
+              <li><a>Ma</div>
         </div>
       <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#collapseBlog"><h3>Blog</h3></a></div>
         <div id="collapseBlog" class="panel-collapse collapse">          
@@ -87,6 +99,10 @@
         </div>
   </div>
 </div>
+<aside id="asideBio">
+  <p>My previous career was technical recruiting/account managing at a small company. It had an energetic, team-focused environment, but it was all about the commission. I am looking for the next iteration of my career to be completely different and much the same--"all-hands-on-deck" continues as my motto and helping one another as a given across the team are both incredibly important. 
+  <br>The difference is that I want my team to build something fantastic, and I know I need to assume the weight of making this happen. The product is only outstanding if it is designed the right way--I am growing to be that designer. <dr>I do really enjoy dining, adventure, sports and travel, but I'm more interested in working on the greatest idea I can than finding the best idea in a particular field.</p>
+</aside>
 <footer><p>Thanks for visiting! Let me know where I could improve. Got a fun project? Let me know, I'd love to help! This version is a'la July 2014.</p></footer>
 
 </body>
