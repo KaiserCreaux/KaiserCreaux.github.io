@@ -1,0 +1,34 @@
+Character Builder
+
+
+A) Scope of functionality
+
+-Name ((Text))
+-Character Name ((Text))
+-Race
+	-Portrait click-through menu with links to longer descriptions  ((Hover mouse to bring up an image that brings up a scrolling bar of different photos of the races))
+	-Subtypes ((Radial box))
+	-Racial Professions
+-Skillset ((Selection of types; martial sets then prompt for a selection of skills))
+-Profession ((Choose classification then type))
+-Religion ((Choose religion or none and then power branch))
+-Where did your character come from ((text, probably not in first version))
+-How did your character learn their skills ((Text, probably not in first version))
+
+-Adding Levels through Buyback ((Probably not in first version))
+	-Faction Benefits ((Text))
+	-Magic Items ((Text))
+	-Additional Skillsets ((runs through Skillset function))
+	-HP/MP Addition ((Automated from Skillsets; has a "miscellaneous additions/subtractions" entry
+	
+	RP/SP Points?
+	
+B) Complicated Variables
+-Object "Player" with variables for each entry above
+-Object "Race" to display photos and select subtypes/racial profession
+-Object "Skillset" to list classifications of skillsets, then select sub-set
+-Object "Religion" to list the 9, then select path
+
+
+C) Design Questions
+-Do I want to run skillsets a player has as a total that is added to with each skillset acquired, or attach each level of each skillset a player has to their card, and total them when presenting the output?

@@ -1,0 +1,535 @@
+<html>
+
+<head>
+
+<title>Legacy Character Sheet Constructor</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="jquery-2.1.0.min.js"></script>
+
+<script type='text/javascript' src='script.js'></script>
+
+</head>
+
+<body>
+
+<div id='page' class='page'>
+
+<div id="main">
+
+<h1>Legacy LARP Character Sheet Constructor</h1>
+
+<h1>www.legacylarp.com</h1>
+
+<ul class="raceTab"><!--The main tabs to switch between content types-->
+
+<li id="humanTab"><div>Human</div></li>
+
+<li id="elfTab"><div>Elf</div></li>
+
+<li id="dwarfTab"><div>Dwarf</div></li>
+
+<li id="dahnTab"><div>Dahn</div></li>
+
+<li id="wyrdTab"><div>Wyrd</div></li>
+
+</ul>
+
+<div class="raceContentTab" id="startTab"><div class="seg raceSelected" id="startTab" style="display:block;"><!--Given the class 'selected' and style 'block' to begin with so visitors have some content greet them-->
+
+<div class="content" style="display:block;">Select Your Race.</div>
+
+</div>
+
+</div>
+
+<div class="raceContentTab" id="humanTab"><div class="seg" id="humanTab" style="display:none;">
+
+<div class="content" style="display:block;">
+
+<h5>The Humans</h5>
+
+<p>Humans are known to others primarily by their homelands.<br> The three great human cultures are the <a href="http://legacylarp.com/midlanders.php" target="_blank">Midlanders</a>, <br>the <a href="http://legacylarp.com/wastelanders.php" target="_blank">Wastelanders</a> and the <a href="http://legacylarp.com/northlanders.php" target="_blank">Northlanders</a>.</p>
+
+<ul class="humanTypeTab"><!--The tabs to switch between human subtypes-->
+
+<li id="midlanderTab"><div>Midlander</div></li>
+
+<li id="northlanderTab"><div>Northlander</div></li>
+
+<li id="wastelanderTab"><div>Wastelander</div></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="raceContentTab" id="elfTab"><div class="seg" id="elfTab" style="display:none;">
+
+<div class="content" style="display:block;">
+
+<h5>The Elves</h5>
+
+<p>The ancient elves have lived across the world of Sapience.<br>The <a href="http://legacylarp.com/greyelves.php target="_blank"">Grey Elves</a> are noble, wise and withdrawn.<br>The <a href="http://legacylarp.com/darkelves.php target="_blank"">Dark Elves</a> are hierarchical, cunning and always in pursuit of power.<br>The <a href="http://legacylarp.com/wildelves.php target="_blank"">Wild Elves</a>, stern and resolute, have a love and respect for nature.
+
+
+
+<ul class="elfTypeTab"><!--The main tabs to switch between elf subtypes-->
+
+<li id="darkElfTab"><div>Dark Elf</div></li>
+
+<li id="greyElfTab"><div>Grey Elf</div></li>
+
+<li id="wildElfTab"><div>Wild Elf</div></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="raceContentTab" id="dwarfTab"><div class="seg" id="dwarfTab" style="display:none;">
+
+<div class="content" style="display:block;">
+
+<h5>The Dwarves</h5>
+
+<p>The pious and formal <a href="http://legacylarp.com/deepbeards.php target="_blank"">Deep Beards</a> are a contrast<br>to the impetuous and clan-focused <a href="http://legacylarp.com/highbeards.php target="_blank"">High Beards</a>.
+
+<ul class="dwarfTypeTab"><!--The main tabs to switch between dwarf subtypes-->
+
+<li id="deepBeardTab"><div>Deep Beard</div></li>
+
+<li id="highBeardTab"><div>High Beard</div></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="raceContentTab" id="dahnTab"><div class="seg" id="dahnTab" style="display:none;">
+
+<div class="content" style="display:block;">
+
+<h5>The Dahn</h5>
+
+<p>Those Orcs and Goblins who eschew the savage ways<br>of the majority of their type are known as the <a href="http://legacylarp.com/dahn.php target="_blank"">Dahn</a>.
+
+<ul class="dahnTypeTab"><!--The main tabs to switch between dahn subtypes-->
+
+<li id="goblinTab"><div>Goblin</div></li>
+
+<li id="orcTab"><div>Orc</div></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="raceContentTab" id="wyrdTab"><div class="seg" id="wyrdTab" style="display:none;">
+
+<div class="content" style="display:block;">
+
+<h5>The Wyrd</h5>
+
+<p>Of all the mortal races of Sapience, there are none more shrouded in mystery than the <a href="http://legacylarp.com/wyrd.php target="_blank"">Wyrd</a>.
+
+<ul class="wyrdTypeTab"><!--The tabs to switch between wyrd subtypes-->
+
+<li id="airWyrdTab"><div>Air Wyrd</div></li>
+
+<li id="earthWyrdTab"><div>Earth Wyrd</div></li>
+
+<li id="fireWyrdTab"><div>Fire Wyrd</div></li>
+
+<li id="waterWyrdTab"><div>Water Wyrd</div></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div id='raceDisplayContainer'>
+
+<div id='northlanderTab' class='raceDisplay raceStyle' style="display:none"><!--Northlander display-->
+
+<img src="http://i.imgur.com/C0FYqod.jpg">
+
+<p>Northlanders<br>HP:10/MP:4<br>Racial Boons:<br>
+
+Novice skill in Huntsman or Mystic<br>
+
+Choice between:<br>Path of the Warrior<br>Path of the Fate Wielder<br>Path of the Jarl
+
+<button type="button" class="buttonSelect" id="selectNorthlander">Select</button>
+
+<button type="button" class="returnButtonRace returnButton">Return</button>
+
+</p>
+
+</div>
+
+<div id='midlanderTab' class='raceDisplay raceStyle' style="display:block"><!--Midlander display-->
+
+<img src="http://i.imgur.com/GxeikaX.jpg">
+
+<p>Midlanders<br>HP:6/MP:6<br>Racial Boons:<br>
+
+2 Professions to Start<br>
+
+Favored Group
+
+<button type="button" class="buttonSelect" id="selectMidlander">Select</button>
+
+<button type="button" class="returnButtonRace returnButton">Return</button>
+
+</p>
+
+</div>
+
+<div id='wastelanderTab' class='raceDisplay raceStyle' style="display:none"><!--Wastelander display-->
+
+<img src="http://i.imgur.com/KKH0r9u.jpg">
+
+<p>Wastelanders<br>HP:4/MP:8<br>Racial Boons:<br>
+
+Novice skill in Merchant or Rogue<br>
+
+Choice between:<br>Slow<br>Mend Limb<br>Heart Scarab
+
+<button type="button" class="buttonSelect" id="selectWastelander" >Select</button>
+
+<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+
+</p>
+
+</div>
+
+<div id='greyElfTab' class='raceDisplay raceStyle' style="display:none"><!--Grey Elves-->
+
+<img src="http://i.imgur.com/6aGfjRE.jpg">
+
+<p>Grey Elves<br>HP:6/MP:10<br>Racial Boons:<br>
+
+Novice skill in Mystic or Linguist<br>
+
+Choice between:<br>Erudition<br>Comprehend<br>Refuge
+
+<button type="button" class="buttonSelect" id="selectGreyElf" >Select</button>
+
+<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+
+</p>
+
+</div>
+
+<div id='wildElfTab' class='raceDisplay raceStyle' style="display:none"><!--Wild Elves display-->
+
+<img src="http://i.imgur.com/GE4STlj.jpg">
+
+<p>Wild Elves<br>HP:6/MP:8<br>Racial Boons:<br>
+
+Novice skill in Huntsman or Medicine<br>
+
+Choice between:<br>Writ of the Maple<br>Writ of the Cedar<br>Writ of the Oak
+
+<button type="button" class="buttonSelect" id="selectWildElf" >Select</button>
+
+<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+
+</p>
+
+</div>
+
+<div id='darkElfTab' class='raceDisplay raceStyle' style="display:none"><!--Dark Elf display-->
+
+<img src="http://i.imgur.com/9JX1yeO.jpg">
+
+<p>Dark Elves<br>HP:4/MP:12<br>Racial Boons:<br>
+
+Novice skill in Diplomat or Poison<br>
+
+Choice between:<br>sting<br>Shadow Mask<br>Combat Sacrifice
+
+<button type="button" class="buttonSelect" id="selectDarkElf" >Select</button>
+
+<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+
+</p>
+
+</div>
+
+<div id='deepBeardTab' class='raceDisplay raceStyle' style="display:none"><!--Deep Beard display-->
+
+<img src="http://i.imgur.com/5ahCb4Q.jpg">
+
+<p>Deep Beards<br>HP:6/MP:8<br>Racial Boons:<br>
+
+Novice skill in History or Jeweller<br>
+
+Heirloom Item
+
+<button type="button" class="buttonSelect" id="selectDeepBeard" >Select</button>
+
+<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+
+</p>
+
+</div>
+
+<div id='highBeardTab' class='raceDisplay raceStyle' style="display:none"><!--high Beard display-->
+
+<img src="http://i.imgur.com/iSXkOJG.png">
+
+<p>High Beards<br>HP:6/MP:6<br>Racial Boons:<br>
+
+Novice skill in Bard or Brewer<br>
+
+Choice between:<br>
+
+Geas of Animal<br>
+
+Geas of Nourishment<br>
+
+Geas of Guest<br>
+
+<button type="button" class="buttonSelect" id="selectHighBeard" >Select</button>
+
+<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+
+</p>
+
+</div>
+
+<div id='orcTab' class='raceDisplay raceStyle' style="display:none"><!--Orc display-->
+
+<img src="http://i.imgur.com/dF4gEPT.jpg">
+
+<p>Orcs<br>HP:8/MP:8<br>Racial Boons:<br>
+
+Novice skill in Jeweller or Battle Smith<br>
+
+Choice between:<br>
+
+Gift of Drogba<br>
+
+Gift of Gerkal<br>
+
+Bane of Duat<br>
+
+<button type="button" class="buttonSelect" id="selectOrc" >Select</button>
+
+<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+
+</p>
+
+</div>
+
+<div id='goblinTab' class='raceDisplay raceStyle' style="display:none"><!--Goblin display-->
+
+<img src="http://i.imgur.com/gdSSFVG.jpg">
+
+<p>Goblins<br>HP:4/MP:12<br>Racial Boons:<br>
+
+Novice skill in Jeweller or Battle Smith<br>
+
+Choice between:<br>
+
+Gift of Drogba<br>
+
+Gift of Gerkal<br>
+
+Bane of Duat<br>
+
+<button type="button" class="buttonSelect" id="selectGoblin" >Select</button>
+
+<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+
+</p>
+
+</div>
+
+<div id='airWyrdTab' class='raceDisplay raceStyle' style="display:none"><!--Air Wyrd display-->
+
+<img src="http://i.imgur.com/GrLJIes.jpg">
+
+<p>Air Wyrds<br>HP:4/MP:10<br>Racial Boons:<br>
+
+Novice skill in History or Linguistics<br>
+
+Dart of Lightning
+
+<button type="button" class="buttonSelect" id="selectAirWyrd" >Select</button>
+
+<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+
+</p>
+
+</div>
+
+<div id='earthWyrdTab' class='raceDisplay raceStyle' style="display:none"><!--Earth Wyrd display-->
+
+<img src="http://i.imgur.com/9MLJ4Xt.jpg">
+
+<p>Earth Wyrds<br>HP:4/MP:10<br>Racial Boons:<br>
+
+Novice skill in Medicine or Poison<br>
+
+Dart of Crystal
+
+<button type="button" class="buttonSelect" id="selectEarthWyrd" >Select</button>
+
+<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+
+</p>
+
+</div>
+
+<div id='fireWyrdTab' class='raceDisplay raceStyle' style="display:none"><!--Fire Wyrd display-->
+
+<img src="http://i.imgur.com/SNj7Zvd.jpg">
+
+<p>Fire Wyrds<br>HP:4/MP:10<br>Racial Boons:<br>
+
+Novice skill in Battle Smith or Artificer<br>
+
+Dart of Fire
+
+<button type="button" class="buttonSelect" id="selectFireWyrd" >Select</button>
+
+<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+
+</p>
+
+</div>
+
+<div id='waterWyrdTab' class='raceDisplay raceStyle' style="display:none"><!--Water Wyrd display-->
+
+<img src="http://i.imgur.com/3EgM2Wl.jpg">
+
+<p>Water Wyrds<br>HP:4/MP:10<br>Racial Boons:<br>
+
+Novice skill in Merchant or Bard<br>
+
+Dart of Ice
+
+<button type="button" class="buttonSelect" id="selectWaterWyrd" >Select</button>
+
+<button type="button" class="returnButton" onclick="returnButtonRace();">Return</button>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div id='sideBar'>
+
+<div id='options'>
+
+
+
+</div>
+
+<div id='characterSheet'><!--Heart of the project. It will show the results from the selections the user makes.-->
+
+<table>
+
+<tr>
+
+<td><button class="buttonSelect" id="setPlayerName">Your Name:</button></td>
+
+<td><p id="playerName"></p></td>
+
+</tr>
+
+<tr>
+
+<td><button class="buttonSelect" id="setCharacterName">Character Name:</button></td>
+
+<td><p id="characterName"></td>
+
+</tr>
+
+<tr>
+
+<td>Race:</td>
+
+<td><p id="raceTotal"></p></td>
+
+</tr>
+
+<td>Hit Points:</td>
+
+<td><p id="hitPointsTotal">0</p></td>
+
+</tr>
+
+<tr>
+
+<td>Magic Points:</td>
+
+<td><p id="magicPointsTotal">0</p></td>
+
+</tr>
+
+<td>Professions:</td>
+
+<td><p id="professionsTotal"></p></td>
+
+</tr>
+
+</tr>
+
+<td>Abilities:</td>
+
+<td><p id="abilitiesTotal"></p></td>
+
+</tr>
+
+</table>
+
+<!--<div id='sheetName'>
+
+<form>Player name: <input type="text" name="playerName"></form>
+
+</div>
+
+<div id='sheetCharacterName'>
+
+<form>Character name: <input type="text" name="characterName"></form>
+
+</div>
+
+<div id='sheetRace'><p>Race:</p></div>
+
+<div id='sheetSkillSet'></div>
+
+<div id='sheetProfession'></div><p>Hi</p>-->
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

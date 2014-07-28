@@ -1,0 +1,173 @@
+/*  This div class is the container for our menu.
+    It defines attributes for everything inside. */
+body  {
+    text-align:center;
+    background: url("http://i.imgur.com/vXLdMeL.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: navy;
+    font-family: garamond;
+}
+#sidebar{
+	height: 100%;
+	width: 100%;
+	background-color: #303014;
+	position: relative;
+	display: inline-block;
+	z-index: 10;
+	box-shadow: 2px 2px 2px #334477;
+}
+#characterSheet {
+	position: fixed;
+	display: block;
+	top: 3em;
+    right: 0;
+	opacity: 80%;
+	background: -webkit-linear-gradient(left top, #FFEAD6 , #DADAFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #FFEAD6 , #DADAFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #FFEAD6 , #DADAFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #FFEAD6 , #DADAFF); /* Standard syntax (must be last) */
+    padding: .75% 1% .75% 1%;
+    border: 1px solid #522900;
+    border-top-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+	box-shadow: 2px 2px 2px #334477;
+}
+.content{
+	background: -webkit-linear-gradient(left top, #FFEAD6 , #DADAFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #FFEAD6 , #DADAFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #FFEAD6 , #DADAFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #FFEAD6 , #DADAFF); /* Standard syntax (must be last) */
+}
+.raceStyle{
+	left:50%;
+	margin:0 auto;
+	height: 70%;
+	width: 45%;
+	background: -webkit-linear-gradient(left top, #FFEAD6 , #DADAFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #FFEAD6 , #DADAFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #FFEAD6 , #DADAFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #FFEAD6 , #DADAFF); /* Standard syntax (must be last) */
+    padding: .75% 1% .75% 1%;
+    border: 1px solid #522900;
+	vertical-align: top;
+	display:initial;
+    border-top-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+	box-shadow: 2px 2px 2px #334477;
+}
+.raceStyle li{
+	display: initial;
+	border: none;
+	list-style: disc
+}
+.raceStyle img {
+	max-height: 50%;
+	max-width: 70%;
+	border: 1px solid #522900;
+	border-top-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+/*  Defining ul to create visual distinction from the rest of the page. */
+ul.tabs {
+    text-align: center;
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*  Making each li legible and structured together with inline-block */
+ul li {
+    margin-bottom: -1px;
+    padding: 0.5% 1% 0.5% 1%;
+    border: 1px solid #522900;
+    opacity: .5;
+    display: inline-block;
+	font-weight: bold;
+    border-top-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+ul li.selected {
+
+    border: 3px solid #522900;
+}
+ul li:hover {
+      opacity: 1;
+      }
+div.main{
+	display: inline-block;
+	width:70%;
+}
+div.page {
+    text-align: center;
+	position: relative;
+	max-width:90%;
+	min-width:60%;
+	z-index: 0;
+}
+/*  Making sure my li's look how I want them, aligned properly and without bullets */
+div.page li {
+    text-align: left;
+    list-style-type: none;
+}
+/* THIS IS WHERE BUTTONS GO */
+.buttonSelect {
+	padding: .5em 1em .5em 1em;
+    border: 1px solid #522900;
+    border-top-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+	-moz-border-radius:6px;
+	opacity: 6;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	text-decoration:none;
+	float:right
+}
+.buttonSelect:hover {
+	opacity: 1;
+}
+.buttonSelect:active {
+	position:relative;
+	top:1px;
+	opacity: 1;
+}
+.returnButton {
+	padding: .5em 1em .5em 1em;
+    border: 1px solid #522900;
+    border-top-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+	-moz-border-radius:6px;
+	opacity: 6;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	text-decoration:none;
+	float:right
+}
+.returnButton:hover {
+	opacity: 1;
+}
+.returnButton:active {
+	position:relative;
+	top:1px;
+	opacity: 1;
+}
