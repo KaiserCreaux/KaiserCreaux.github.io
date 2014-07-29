@@ -32,13 +32,6 @@ p {
     margin-left: 20%;
 }
 
-#headingBio {
-	display: none;
-}
-#collapseBio {
-	display: none;
-}
-
 aside p{
 	float: right;
 	width: 20em;
