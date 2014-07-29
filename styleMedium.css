@@ -26,19 +26,21 @@ p {
 	display: inline;
 }
 
-#asideBio {
-	display: none !important;
-}
-#headingBio {
-	display: block !important;
-}
-#collapseBio {
-	display: block !important;
+#panel {
+	max-width: 70%;
+	margin-right: 20%;
+    margin-left: 20%;
 }
 
+aside p {
+	display: none;
+}
+
+
 footer {
+	clear: both;
 	font-size: 1em;
-	vertical-align: right;
+	width: 100%;
 	color: #FF8438;
 	text-shadow: 1px 1px 2px black;
 }

@@ -12,7 +12,7 @@ nav {
 	border: 3px solid #ggg;;
 }
 
-.panel-heading {
+#panel-heading {
 	background-color: #FF8438;
 }
 
@@ -26,22 +26,29 @@ p {
 	display: inline;
 }
 
-#headingBio {
-	display: none !important;
-}
-#collapseBio {
-	display: none !important;
+#panel {
+	max-width: 70%;
+	margin-right: 20%;
+    margin-left: 20%;
 }
 
-#asideBio {
-	float: right !important;
+#headingBio {
+	display: none;
+}
+#collapseBio {
+	display: none;
+}
+
+aside p{
+	float: right;
 	width: 20em;
 	height: 30em;
 }
 
 footer {
+	clear: both;
 	font-size: 1em;
-	vertical-align: right;
+	width: 100%;
 	color: #FF8438;
 	text-shadow: 1px 1px 2px black;
 }
