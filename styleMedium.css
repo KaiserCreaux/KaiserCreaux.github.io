@@ -49,9 +49,10 @@ footer {
 	height: 85%;
 }
 
-#accordion {
+.accordion {
 	border: 3px solid #ggg;
-	max-width: 70%;
+	max-width: 90%;
 	margin-right: 20%;
     margin-left: 20%;
+    opacity: 0.8;
 }

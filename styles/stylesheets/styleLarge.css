@@ -12,7 +12,7 @@ nav {
 	border: 3px solid #ggg;;
 }
 
-#panel-heading {
+.panel-heading {
 	background-color: #FF8438;
 }
 
@@ -26,8 +26,8 @@ p {
 	display: inline;
 }
 
-#panel {
-	max-width: 70%;
+.panel  {
+
 	margin-right: 20%;
     margin-left: 20%;
 }
@@ -46,16 +46,14 @@ footer {
 	text-shadow: 1px 1px 2px black;
 }
 
-#monogram {
+.monogram {
 	height: 85%;
 }
 
-#accordion {
+.accordion {
 	border: 3px solid #ggg;
 	max-width: 70%;
 	margin-right: 20%;
     margin-left: 20%;
-    float: left;
     opacity: 0.8;
-
 }

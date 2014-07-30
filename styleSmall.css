@@ -16,11 +16,11 @@ nav {
 	background-color: #FF8438;
 }
 
-#accordion {
+.accordion {
 	border: 3px solid #ggg;
-	max-width: 90%;
-	margin-right: 10%;
-    margin-left: 10%;
+	max-width: 100%;
+	margin-right: 20%;
+    margin-left: 20%;
     opacity: 0.8;
 }
 
