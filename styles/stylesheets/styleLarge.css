@@ -1,41 +1,17 @@
 
-body {
-	background-image: url("http://i.imgur.com/TOQSa86.jpg");
-	background-size: 100%;
-    background-repeat: no-repeat;
-	font-family: "Ubuntu";
-	font-size: 2em;
-	vertical-align: center;
-}
-
-nav {
-	border: 3px solid #ggg;;
-}
-
-.panel-heading {
-	background-color: #FF8438;
-}
-
-h3 {
-	font-family: 'Vollkorn', serif;
-	color: #FF8438;
-	text-shadow: 1px 1px 2px black;
-}
-
-p {
-	display: inline;
-}
-
-.panel  {
-
-	margin-right: 20%;
-    margin-left: 20%;
-}
-
 aside p{
 	float: right;
 	width: 20em;
 	height: 30em;
+}
+
+body {
+	background-image: url("http://i.imgur.com/TOQSa86.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	font-family: "Ubuntu";
+	font-size: 2em;
+	vertical-align: center;
 }
 
 footer {
@@ -46,14 +22,54 @@ footer {
 	text-shadow: 1px 1px 2px black;
 }
 
+h3 {
+	font-family: 'Vollkorn', serif;
+	color: #FF8438;
+	text-shadow: 1px 1px 2px black;
+}
+
+nav {
+	border: 3px solid #ggg;;
+}
+
+p {
+	display: inline;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.accordion {
+		width: 70%;
+		border: 3px solid #ggg;
+		margin-right: auto;
+	    margin-left: auto;
+	    opacity: 0.8;
+	    font-size: 2em;
+	    /* tablets and desktop */
+	}
+}
+@media only screen and (max-width: 767px) {
+	.accordion {
+		border: 3px solid #ggg;
+		max-width: 100%;
+		margin-right: auto;
+	    margin-left: auto;
+	    font-size: 1.2em;
+	    opacity: 0.8;
+	}
+}
+
 .monogram {
 	height: 85%;
 }
 
-.accordion {
-	border: 3px solid #ggg;
-	max-width: 70%;
+.panel  {
 	margin-right: 20%;
     margin-left: 20%;
-    opacity: 0.8;
 }
+
+.panel-heading {
+	background-color: #FF8438;
+}
+
+

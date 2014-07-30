@@ -1,4 +1,8 @@
 
+aside p{
+	display: none;
+}
+
 body {
 	background-image: url("http://i.imgur.com/TOQSa86.jpg");
 	background-size: 100%;
@@ -8,35 +12,6 @@ body {
 	vertical-align: center;
 }
 
-nav {
-	border: 3px solid #ggg;;
-}
-
-.panel-heading {
-	background-color: #FF8438;
-}
-
-h3 {
-	font-family: 'Vollkorn', serif;
-	color: #FF8438;
-	text-shadow: 1px 1px 2px black;
-}
-
-p {
-	display: inline;
-}
-
-#panel {
-	max-width: 70%;
-	margin-right: 20%;
-    margin-left: 20%;
-}
-
-aside p {
-	display: none;
-}
-
-
 footer {
 	clear: both;
 	font-size: 1em;
@@ -45,14 +20,37 @@ footer {
 	text-shadow: 1px 1px 2px black;
 }
 
-#monogram {
-	height: 85%;
+h3 {
+	font-family: 'Vollkorn', serif;
+	color: #FF8438;
+	text-shadow: 1px 1px 2px black;
+}
+
+nav {
+	border: 3px solid #ggg;;
+}
+
+p {
+	display: inline;
 }
 
 .accordion {
 	border: 3px solid #ggg;
 	max-width: 90%;
+	margin-right: 5%;
+    margin-left: 5%;
+    opacity: 0.8;
+}
+
+.monogram {
+	height: 85%;
+}
+
+.panel  {
 	margin-right: 20%;
     margin-left: 20%;
-    opacity: 0.8;
+}
+
+.panel-heading {
+	background-color: #FF8438;
 }

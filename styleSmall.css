@@ -1,19 +1,37 @@
 
+aside p{
+	display: none;
+}
+
 body {
 	background-image: url("http://i.imgur.com/TOQSa86.jpg");
 	background-size: 100%;
     background-repeat: no-repeat;
 	font-family: "Ubuntu";
-	font-size: 2em;
+	font-size: 1.4em;
 	vertical-align: center;
+}
+
+footer {
+	clear: both;
+	font-size: 1em;
+	width: 100%;
+	color: #FF8438;
+	text-shadow: 1px 1px 2px black;
+}
+
+h3 {
+	font-family: 'Vollkorn', serif;
+	color: #FF8438;
+	text-shadow: 1px 1px 2px black;
 }
 
 nav {
 	border: 3px solid #ggg;;
 }
 
-#panel-heading {
-	background-color: #FF8438;
+p {
+	display: inline;
 }
 
 .accordion {
@@ -24,33 +42,15 @@ nav {
     opacity: 0.8;
 }
 
-h3 {
-	font-family: 'Vollkorn', serif;
-	color: #FF8438;
-	text-shadow: 1px 1px 2px black;
+.monogram {
+	height: 85%;
 }
 
-#panel {
-	max-width: 70%;
+.panel  {
 	margin-right: 20%;
     margin-left: 20%;
 }
 
-aside p {
-	background-color: red;
-	width: 1em;
-	display: none;
-}
-
-
-footer {
-	clear: both;
-	font-size: .77em;
-	width: 100%;
-	color: #FF8438;
-	text-shadow: 1px 1px 2px black;
-}
-
-#monogram {
-	height: 85%;
+.panel-heading {
+	background-color: #FF8438;
 }
