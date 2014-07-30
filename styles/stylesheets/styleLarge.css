@@ -10,7 +10,7 @@ body {
 	background-size: cover;
     background-repeat: no-repeat;
 	font-family: "Ubuntu";
-	font-size: 2em;
+	font-size: 1.2em;
 	vertical-align: center;
 }
 
@@ -29,7 +29,7 @@ h3 {
 }
 
 nav {
-	border: 3px solid #ggg;;
+	border: 3px solid #ggg;
 }
 
 p {
@@ -44,7 +44,7 @@ p {
 		margin-right: auto;
 	    margin-left: auto;
 	    opacity: 0.8;
-	    font-size: 2em;
+	    font-size: 1.2em;
 	    /* tablets and desktop */
 	}
 }
@@ -54,7 +54,7 @@ p {
 		max-width: 100%;
 		margin-right: auto;
 	    margin-left: auto;
-	    font-size: 1.2em;
+	    font-size: 1em;
 	    opacity: 0.8;
 	}
 }
@@ -64,8 +64,8 @@ p {
 }
 
 .panel  {
-	margin-right: 20%;
-    margin-left: 20%;
+	margin-right: auto;
+    margin-left: auto;
 }
 
 .panel-heading {
