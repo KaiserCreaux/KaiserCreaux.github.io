@@ -50,7 +50,7 @@ p {
 		border: 3px solid #ggg;
 		margin-right: auto;
 	    margin-left: auto;
-	    opacity: 0.8;
+	    opacity: 0.7;
 	    font-size: 1.2em;
 	    /* tablets and desktop */
 	}
@@ -62,7 +62,7 @@ p {
 		margin-right: auto;
 	    margin-left: auto;
 	    font-size: 1em;
-	    opacity: 0.92;
+	    opacity: 0.7;
 	}
 }
 
