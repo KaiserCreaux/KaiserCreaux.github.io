@@ -18,7 +18,7 @@ footer {
 	font-size: 1em;
 	width: 100%;
 	color: #FE9A2E;
-	text-shadow: 1px 1px 2px black;
+	text-shadow: 1px 1px 2px #223399;
 }
 
 h3 {
@@ -29,6 +29,14 @@ h3 {
 
 nav {
 	border: 3px solid #ggg;
+}
+
+.navbar-default {
+	color: #223399;
+}
+
+.navbar-nav li a {
+	color: #223399;
 }
 
 p {
@@ -54,7 +62,7 @@ p {
 		margin-right: auto;
 	    margin-left: auto;
 	    font-size: 1em;
-	    opacity: 0.8;
+	    opacity: 0.92;
 	}
 }
 
@@ -78,7 +86,7 @@ p {
 }
 
 .panel-heading {
-	background-color: #FF8438;
+	background-color: #f8f8ff
 }
 
 
