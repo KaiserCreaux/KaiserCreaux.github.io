@@ -29,6 +29,15 @@ div.team {
     width: 70%;
 }
 
+.profileImage {
+    border: 1px solid #33ffbb;
+    display: inline-block;
+    border-top-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
 /*  Defining ul to create visual distinction from the rest of the page. */
 ul.tabs {
     text-align: center;
