@@ -7,19 +7,29 @@
     <script type='text/javascript' src='script.js'></script>
   	<meta name="description" content="Page description. No longer than 155 characters." />
 
+	<!-- Twitter Card data --> 
+	<meta name="twitter:card" value="summary">
+
+	<!-- Open Graph data --> 
+	<meta property="og:title" content="Todd A. Crow" /> 
+	<meta property="og:type" content="A website of the many wonderful things I do." /> 
+	<meta property="og:url" content=" http://www.toddacrow.com" />
+	<meta property="og:image" content=" http://i.imgur.com/bkKieGA.png" />
+	<meta property="og:description" content="I am a front-end developer in Brooklyn looking for a professional opportunity to sharpen my skills!" />
+
   	<!-- Open Graph data --> 
   	<meta property="og:title" content="Todd A. Crow" /> 
   	<meta property="og:type" content="A website of the many wonderful things I do." /> 
   	<meta property="og:url" content=" http://www.toddacrow.com" />
   	<meta property="og:image" content=" http://i.imgur.com/bkKieGA.png" />
-  	<meta property="og:description" content="I am a front-end developer in Manhattan looking for an opportunity to sharpen my skills!" />
-  	
+  	<meta property="og:description" content="I am a front-end developer in Brooklyn looking for an opportunity to sharpen my skills!" />
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <!--Latest compiled and minified CSS -->
     <link rel="icon" type="image/png" href="http://i.imgur.com/bkKieGA.png">
-    <link rel="stylesheet" href="styles/colorbox.css" type="text/css"><!--ColorBox -->
+    <script type="text/javascript" src="lightbox.js"></script><!--LightBox.js -->
     <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css"><!--Bootstrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!--Bootstrap-->
     <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script><!--Bootstrap-->
@@ -83,7 +93,7 @@
         <div id="collapseProjects" class="panel-collapse collapse">
           <div class="panel-body"><p>Here are some of the UX-related projects I've been working with both inside and outside Startup Institute.<br>          
             <ul>
-              <li><p>Logo and Box Art for a <a href="images/BidetLogo.png" class="enlarge">Bidet</a> <a href="images/BidetFront.png" class="enlarge">Startup</a></p></li>
+              <li><p>Logo and Box Art for a <a href="images/BidetLogo.png" class="enlarge" target=_blank>Bidet</a> <a href="images/BidetFront.png" class="enlarge" target=_blank>Startup</a></p></li>
               <li><a href="http://www.toddacrow.com/DinoVoidlings/index.html" target="blank">Dino Voidlings League of Legends team</a></li>
               <li><a href="http://www.toddacrow.com/legacycreator/index.html" target="blank">Legacy LARP character builder Builder v0.5</a></li>
               <li><a href="http://www.toddacrow.com/Projects/AlphaSights.html" target="blank">AlphaSights partner project, Startup Institute</a></li>
@@ -92,11 +102,10 @@
       <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#collapseRecipes"><h3>Recipes</h3></a></div>
         <div id="collapseRecipes" class="panel-collapse collapse">          
           <div class="panel-body"><p>I really enjoy cooking! Let me talk you through a few recipes. You might learn something about how I design along the way. A few of my favorites include:</p>
-          <ul>
-            <li><a>Tiger's Tears Salad</a></li>
-            <li><a>St. Louis Pork Steak</a></li>
-            <li><a>Rye Pale Ale</a></li>
-            <li><a>Ejotes y Tomate</a></li>
+          <ul class="recipeBucket">
+            <li class="recipeItem"><div class="recipePreview"><a><img src="http://i.imgur.com/Qjj0Zeb.jpg"><br>Tiger's Tears Salad</a></div></li>
+            <li class="recipeItem"><div class="recipePreview"><a><img src="http://i.imgur.com/sHpLXlb.jpg"><br>Country Style Ribs</a></div></li>
+            <li class="recipeItem"><div class="recipePreview"><a><img src="http://i.imgur.com/NOXc29Y.jpg"><br>Rye Pale Ale</a></div></li>
           </ul>
           </div>
         </div>

@@ -80,6 +80,11 @@ p {
 	z-index: -1;
 }
 
+.recipeBucket {
+	list-style-type: none;
+	display: inline;
+}
+
 .monogram {
 	height: 85%;
 }
@@ -93,4 +98,12 @@ p {
 	background-color: #f8f8ff
 }
 
+.recipeItem {
+	max-height: 130px;
+	max-width: 33%;
+	display: inline-block;
+	}
 
+.recipePreview img {
+	height: 110px;
+	width: 175px;
