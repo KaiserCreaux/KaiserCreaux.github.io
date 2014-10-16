@@ -23,17 +23,24 @@ body  {
 	min-height: 100%;
 	z-index: -1;
 }
-.team
-{
-margin:auto;
-width:23%;
-
+.team {
+	margin:auto;
+	width:23%;
 }
-img.team
-{max-width:100%;
-height:auto;
-border-style:solid;
-border-color: #33ffbb;
+img.team	{
+	max-width:100%;
+	height:auto;
+	border-style:solid;
+	border-color: #33ffbb;
+}
+
+.preview {
+	border-style: solid;
+    border: 1px solid #FE9A2E;
+	border-top-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 div.team {
