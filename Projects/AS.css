@@ -43,7 +43,7 @@ div.team {
 }
 
 /*  Defining ul to create visual distinction from the rest of the page. */
-ul.tabs {
+ul .tabs {
     text-align: center;
     list-style: none;
     position: relative;
