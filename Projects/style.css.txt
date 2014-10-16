@@ -1,0 +1,76 @@
+
+/*  This div class is the container for our menu.
+    It defines attributes for everything inside. */
+body  {
+    text-align:center;
+    background: url("http://imgur.com/HvLXymN.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #33ffbb;
+    font-family: garamond;
+}
+.team
+{
+margin:auto;
+width:23%;
+
+}
+img.team
+{max-width:100%;
+height:auto;
+border-style:solid;
+border-color: #33ffbb;
+}
+
+div.team {
+    font-family: "Helvetica";
+    font-size: 1em;
+    width: 70%;
+}
+
+/*  Defining ul to create visual distinction from the rest of the page. */
+ul.tabs {
+    text-align: center;
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*  Making each li legible and structured together with inline-block */
+ul li {
+    margin-bottom: -1px;
+    padding: 0.5% 1% 0.5% 1%;
+    border: 1px solid #33ffbb;
+    opacity: .5;
+    display: inline-block;
+    border-top-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+ul li.selected {
+
+    border: 3px solid #33ffbb;
+}
+ul li:hover {
+      opacity: 1;
+      }
+
+div.page {
+    text-align: center;
+}
+/*  Making sure my li's look how I want them, alligned properly and without bullets */
+div.page li {
+    text-align: left;
+    list-style-type: none;
+}
+
+h1, h3 {
+    margin-left: auto;
+    margin-right: auto;
+	}
+
