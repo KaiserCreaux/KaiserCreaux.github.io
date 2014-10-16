@@ -43,7 +43,7 @@ div.team {
 }
 
 /*  Defining ul to create visual distinction from the rest of the page. */
-ul .tabs {
+ul.selectorList {
     text-align: center;
     list-style: none;
     position: relative;
@@ -53,7 +53,7 @@ ul .tabs {
 }
 
 /*  Making each li legible and structured together with inline-block */
-.tabs li {
+.selectorList li {
     margin-bottom: -1px;
     padding: 0.5% 1% 0.5% 1%;
     border: 1px solid #FE9A2E;
@@ -64,11 +64,11 @@ ul .tabs {
     border-bottom-left-radius: 6px;
     border-top-right-radius: 6px;
 }
-.tabs li.selected {
+.selectorList li.selected {
 
     border: 3px solid #FE9A2E;
 }
-.tabs li:hover {
+.selectorList li:hover {
       opacity: 1;
       }
 
