@@ -44,7 +44,7 @@ ul.selectorList {
 }
 
 /*  Making each li legible and structured together with inline-block */
-ul.selectorList li {
+.selectorList li {
     margin-bottom: -1px;
     padding: 0.5% 1% 0.5% 1%;
     border: 1px solid #33ffbb;
@@ -55,11 +55,11 @@ ul.selectorList li {
     border-bottom-left-radius: 6px;
     border-top-right-radius: 6px;
 }
-ul.selectorList li.selected {
+.selectorList li.selected {
 
     border: 3px solid #33ffbb;
 }
-ul.selectorList li:hover {
+.selectorList li:hover {
       opacity: 1;
       }
 
