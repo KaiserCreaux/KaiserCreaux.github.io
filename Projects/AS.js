@@ -16,4 +16,20 @@ $(document).ready(function() {
     });
     
     });
+    $tabsPlayers = $(".tabsPlayers li");//this manages the pages for individual players, and is highly similar to the above code.
+    
+    $tabsPlayers.click(function() {
+        if($(this)){
+            $tabsPlayers.removeClass("selectedTeam");
+        $(this).addClass("selectedTeam");}
+        
+        selectionIdTeam = $(this).attr('id');
+        
+        $pagesTeam = $(".pageTeam#"+selectionIdTeam);
+    $(".content").fadeOut("fast", function(){
+        $(".pageTeam").css("display", "none");
+        $(".pageTeam#"+selectionIdTeam).css("display", "block");
+        $(".content").fadeIn("slow");
+    });
+    });
 });
