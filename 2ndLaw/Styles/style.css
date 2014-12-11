@@ -1,0 +1,35 @@
+div {
+  display: block; }
+
+.hex {
+  float: right;
+  margin-right: -26px;
+  margin-bottom: -50px; }
+
+.hex .left {
+  float: left;
+  width: 0;
+  border-right: 30px solid #3bbfce;
+  border-top: 52px solid transparent;
+  border-bottom: 52px solid transparent; }
+
+.hex .middle {
+  float: left;
+  width: 120px;
+  height: 104px;
+  background: #3bbfce; }
+
+.hex .right {
+  float: left;
+  width: 0;
+  border-left: 30px solid #3bbfce;
+  border-top: 52px solid transparent;
+  border-bottom: 52px solid transparent; }
+
+.hex-row {
+  clear: right; }
+
+.hex.spacer {
+  margin-top: 53px; }
+
+/*# sourceMappingURL=style.css.map */
