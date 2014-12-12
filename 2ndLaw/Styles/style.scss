@@ -1,38 +1,65 @@
-$blue: #3bbfce;
-$margin: 16px;
+$blue: #39C5C2;
+$yellow: #ffffa0;
+$margin: -1em;
+$border: 3em;
+$tulpen: 'Tulpen One', cursive;
+$arvo: 'Arvo', serif;
 
-div {
-display: block;
+
+body {
+	background-image: url("http://i.imgur.com/UunR7CW.png");
+}
+h2 {
+	font-family: $tulpen;
+	font-size: 2em;
+	justify-content: center;
+	}
+p {
+	font-family: $arvo;
+}
+
+.content {
+	width:40%;
+	margin-left:30%;
 }
 
 .hex {
     float: right;
-    margin-right: -26px;
-    margin-bottom: -50px;
+    margin-right: $margin;
+    margin-bottom: -$margin / 2;
 }
 .hex .left {
     float: left;
     width: 0;
-    border-right: 30px solid $blue;
-    border-top: 52px solid transparent;
-    border-bottom: 52px solid transparent;
+    border-right: $border / 2 solid $blue;
+    border-top: $border solid transparent;
+    border-bottom: $border solid transparent;
 }
 .hex .middle {
     float: left;
     width: 120px;
-    height: 104px;
+    height: $border * 2;
     background: $blue;
 }
 .hex .right {
     float: left;
     width: 0;
-    border-left: 30px solid $blue;
-    border-top: 52px solid transparent;
-    border-bottom: 52px solid transparent;
+    border-left: $border / 2 solid $blue;
+    border-top: $border solid transparent;
+    border-bottom: $border solid transparent;
 }
 .hex-row {
     clear: right;
 }
 .hex.spacer {
-    margin-top: 53px;
+    margin-top: $margin * 3.2;
+}
+.hex.spacer .middle  {
+	width: auto;
+	}
+.menu {
+	width: 30%;
+	position: absolute;
+	left: -4em;
+	float: left;
 }
