@@ -1,13 +1,14 @@
 $blue: #39C5C2;
-$yellow: #ffffa0;
+$yellow: #ffe100;
 $margin: -1em;
 $border: 3em;
 $tulpen: 'Tulpen One', cursive;
 $arvo: 'Arvo', serif;
 
-
+/*Elements*/
 body {
 	background-image: url("http://i.imgur.com/UunR7CW.png");
+	margin: 0;
 }
 h2 {
 	font-family: $tulpen;
@@ -18,48 +19,62 @@ p {
 	font-family: $arvo;
 }
 
+/*Static class*/
 .content {
 	width:40%;
+	height:500px;
+	background: $yellow;
 	margin-left:30%;
+	position: absolute;
 }
 
 .hex {
     float: right;
     margin-right: $margin;
     margin-bottom: -$margin / 2;
-}
-.hex .left {
-    float: left;
-    width: 0;
-    border-right: $border / 2 solid $blue;
-    border-top: $border solid transparent;
-    border-bottom: $border solid transparent;
-}
-.hex .middle {
-    float: left;
-    width: 120px;
-    height: $border * 2;
-    background: $blue;
-}
-.hex .right {
-    float: left;
-    width: 0;
-    border-left: $border / 2 solid $blue;
-    border-top: $border solid transparent;
-    border-bottom: $border solid transparent;
+
+	.left {
+		float: left;
+		width: 0;
+		border-right: $border / 2 solid $blue;
+		border-top: $border solid transparent;
+		border-bottom: $border solid transparent;
+	}
+	.middle {
+		float: left;
+		width: 12em;
+		height: $border * 2;
+		background: $blue;
+	}
+	.right {
+		float: left;
+		width: 0;
+		border-left: $border / 2 solid $blue;
+		border-top: $border solid transparent;
+		border-bottom: $border solid transparent;
+	}
 }
 .hex-row {
-    clear: right;
-}
-.hex.spacer {
-    margin-top: $margin * 3.2;
-}
-.hex.spacer .middle  {
-	width: auto;
-	}
+	clear: right;
+}	
 .menu {
-	width: 30%;
-	position: absolute;
-	left: -4em;
-	float: left;
+	overflow:hidden;
+	width: 50%;
+	left: $border * 2;
+	float: right;
 }
+.odd {
+	opacity: 0;
+}
+.spacer {
+	margin-top: $margin * 3.2;
+	.middle  {
+		width: $border * 4;
+	}
+}
+
+
+/*Dynamic class*/
+.selected {
+	text-shadow: 0px 0px 5px $yellow;
+	}
