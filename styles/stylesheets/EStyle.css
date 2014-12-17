@@ -1,0 +1,107 @@
+
+a {
+	color: #FE9A2E;
+}
+
+aside p{
+	float: right;
+	width: 20em;
+	height: 30em;
+}
+
+body {
+	font-family: "Ubuntu";
+	font-size: 1.2em;
+	vertical-align: center;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+footer {
+	clear: both;
+	height:2em;
+	font-size: 1em;
+	width: 100%;
+	color: #FE9A2E;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Vollkorn', serif;
+	color: #FE9A2E;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+	border: 3px solid #ggg;
+}
+
+.navbar-default {
+	color: #223399;
+}
+
+.navbar-nav li a {
+	color: #223399;
+}
+
+p {
+	display: inline;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.accordion {
+		width: 70%;
+		border: 3px solid #ggg;
+		margin-right: auto;
+	    margin-left: auto;
+	    opacity: 0.7;
+	    font-size: 1.2em;
+	    /* tablets and desktop */
+	}
+}
+@media only screen and (max-width: 767px) {
+	.accordion {
+		border: 3px solid #ggg;
+		max-width: 100%;
+		margin-right: auto;
+	    margin-left: auto;
+	    font-size: 1em;
+	    opacity: 0.7;
+	}
+}
+
+.bg {
+	position: fixed; 
+    top: 0; 
+    left: 0; 
+	/* Preserve aspet ratio */
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+
+.recipeBucket {
+	list-style-type: none;
+	display: inline;
+}
+
+.monogram {
+	height: 85%;
+}
+
+.panel  {
+	margin-right: auto;
+    margin-left: auto;
+}
+
+.panel-heading {
+	background-color: #f8f8ff
+}
+
+.recipeItem {
+	max-height: 130px;
+	max-width: 33%;
+	display: inline-block;
+	}
+
+

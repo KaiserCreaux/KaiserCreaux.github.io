@@ -9,15 +9,14 @@ $(document).ready(function() {
         selectionId = $(this).attr('id');
         
         $subMenu = $(".subMenu#"+selectionId);//creates object from whichever element of class subMenu was clicked by %menu
-    $(".mContent").fadeOut("fast", function(){//removes active main content page from view, clearing the way for the called main content page
+    $(".mContent").fadeOut("fast", function(){  //removes active main content page from view, clearing the way for the called main content page
         $(".seg").css("display", "none");//gives all .seg class elements invisibility powers
         $(".seg#"+selectionId).css("display", "block");//brings the .seg class that is linked to selectionId back into view
         $(".mContent").fadeIn("slow");//gives instruction on to how to bring it back in
     });
-    function myFunction() {
-    alert("I am an alert box!");
-}
-    });
+
+	});
+
     $tabsPlayers = $(".tabsPlayers li");//this manages the pages for individual players, and is highly similar to the above code.
     
     $tabsPlayers.click(function() {
