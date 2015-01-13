@@ -1,0 +1,15 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.quote {
+    font-style: italic;
+}
+
+.fb-like {
+    height: 100px;
+    width: 100px;
+}
