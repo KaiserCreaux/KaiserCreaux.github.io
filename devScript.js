@@ -9,7 +9,4 @@ function navigateToElement(id) {
         scrollTop: $("#" + id).offset().top
     }, 1000);
 }
-
-$('.enlarge').colorbox();
-});
 }
