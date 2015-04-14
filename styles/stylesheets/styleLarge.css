@@ -66,6 +66,9 @@ p {
 	    margin-left: auto;
 	    font-size: 1em;
 	}
+	.bg {
+	display:none;
+	}
 }
 
 .accordionPic {
