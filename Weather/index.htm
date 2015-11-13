@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="jannaApp">
+    <head>
+        <title>Janna's Weather Forecast</title>
+        <!-- project done with the help of Anthony Alicea's excellent Angular course on Udemy --> 
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load MaterializeCss via CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <style>
+            html, body, input, select, textarea
+            {
+                font-size: 1.05em !important;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <!-- load angular via CDN -->
+        <script src="//code.angularjs.org/1.3.0-rc.2/angular.min.js"></script>
+        <script src="//code.angularjs.org/1.3.0-rc.2/angular-route.min.js"></script>
+        <script src="//code.angularjs.org/1.3.0-rc.2/angular-resource.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+
+        <nav>
+			<div class="nav-wrapper card blue-grey darken-1 z-depth-1">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">Janna's Weather Forecast</a>
+				</div>
+
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+				</ul>
+			</div>
+		</nav>
+
+        <div class="container" >
+            
+            <div ng-view>Angular is broken!</div>
+
+		</div>
+
+    </body>
+</html>
